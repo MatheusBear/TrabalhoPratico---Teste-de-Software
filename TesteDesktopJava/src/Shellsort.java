@@ -6,6 +6,11 @@ public class Shellsort{
      * @param array Unsorted array of int
      */
     public int[] Sort(int[] array){
+        if(array.length == 0 || array.length < 0){
+            System.out.println("Array is empty");
+            return array;
+        }
+
         int size = array.length;
 
         //Start with big gap, then reduce the gap

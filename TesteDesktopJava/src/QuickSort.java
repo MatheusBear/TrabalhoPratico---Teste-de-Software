@@ -6,6 +6,11 @@ public class QuickSort {
     * @param array Unsorted Array
     */
     public int[] Sort(int[] array){
+
+        if(array.length == 0 || array.length < 0){
+            System.out.println("Array is empty");
+            return array;
+        }
         int left = 0;
         int right = array.length - 1;
 

@@ -16,6 +16,14 @@ public class Testes{
         assertEquals(10, array.length);
     }
 
+    //Teste para ver se o método GenArray retorna um array do tamanho desejado
+    @Test(expected = IllegalArgumentException.class)
+    public void testGenArrayShouldReturnArrayOfIntsWith0Size(){
+        IntArrayGenerator gen = new IntArrayGenerator();
+
+        gen.GenArray(0);
+    }
+
     //Teste para ver se o BubbleSort retorna com o array ordenado
     @Test
     public void testBubbleSortSortsArray(){
@@ -41,6 +49,28 @@ public class Testes{
         str = cipher.Cipher(str, 3);
 
         assertEquals("def", str);
+    }
+
+    //Teste para ver se a Cifra de Caesar retorna com a String criptografada
+    @Test
+    public void testCaesarsCipherFraseVazia(){
+        CaesarsCipher cipher = new CaesarsCipher();
+
+        String str = "";
+
+        str = cipher.Cipher(str, 3);
+
+        assertEquals("", str);
+    }
+
+    //Teste para ver se a Cifra de Caesar retorna com a String criptografada
+    @Test
+    public void testCaesarsCipherNumeroNegativo(){
+        CaesarsCipher cipher = new CaesarsCipher();
+
+        String str = "abc";
+
+        assertEquals(str, cipher.Cipher(str, -1));
     }
 
     @Test 
@@ -103,6 +133,16 @@ public class Testes{
         assertEquals(5.5, result, 0.0001);
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void TestFindMedianSortedArrayNums1Length0(){
+        findMedianSortedArrays find = new findMedianSortedArrays();
+
+        int[] nums1 = {};
+        int[] nums2 = {1, 2, 3, 4, 5};
+
+        find.findMedian(nums1, nums2);
+    }
+
     @Test
     public void TestFindMedianSortedArrayNums1SameAsNums2(){
         findMedianSortedArrays find = new findMedianSortedArrays();
@@ -139,6 +179,17 @@ public class Testes{
             assertEquals(i + 1, array[i]);
         }
     }
+
+    @Test
+    public void TestHeapSortLength0(){
+        int[] array = {};
+
+        HeapSort heap = new HeapSort();
+
+        heap.Sort(array);
+
+        assertEquals(array, array);
+    }
     
     @Test
     public void TestInsertionSort(){
@@ -151,6 +202,17 @@ public class Testes{
         for(int i = 0; i < array.length; i++){
             assertEquals(i + 1, array[i]);
         }
+    }
+
+    @Test
+    public void TestInsertionSortLength0(){
+        InsertionSort insertion = new InsertionSort();
+
+        int[] array = {};
+
+        insertion.Sort(array);
+
+        assertEquals(array, array);
     }
 
     @Test
@@ -167,6 +229,17 @@ public class Testes{
     }
 
     @Test
+    public void TestMergeSortLength0(){
+        MergeSort merge = new MergeSort();
+
+        int[] array = {};
+
+        array = merge.Sort(array);
+
+        assertEquals(array, array);
+    }
+
+    @Test
     public void TestPalindromo(){
         Palindromo palindromo = new Palindromo();
 
@@ -175,6 +248,15 @@ public class Testes{
         boolean result = palindromo.IsPalindromo(str);
 
         assertEquals(true, result);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void TestPalindromoVazio(){
+        Palindromo palindromo = new Palindromo();
+
+        String str = "";
+
+        palindromo.IsPalindromo(str);
     }
 
     @Test
@@ -191,6 +273,17 @@ public class Testes{
     }
 
     @Test
+    public void TestQuicksortLength0(){
+        QuickSort quick = new QuickSort();
+
+        int[] array = {};
+
+        array = quick.Sort(array);
+
+        assertEquals(array, array);
+    }
+
+    @Test
     public void TestSelectionSort(){
         SelectionSort selection = new SelectionSort();
 
@@ -204,6 +297,17 @@ public class Testes{
     }
 
     @Test
+    public void TestSelectionSortLength0(){
+        SelectionSort selection = new SelectionSort();
+
+        int[] array = {};
+
+        array = selection.Sort(array);
+
+        assertEquals(array, array);
+    }
+
+    @Test
     public void TestShellsort(){
         Shellsort shell = new Shellsort();
 
@@ -214,5 +318,16 @@ public class Testes{
         for(int i = 0; i < array.length; i++){
             assertEquals(i + 1, array[i]);
         }
+    }
+
+    @Test
+    public void TestShellsortLength0(){
+        Shellsort shell = new Shellsort();
+
+        int[] array = {};
+
+        array = shell.Sort(array);
+
+        assertEquals(array, array);
     }
 }

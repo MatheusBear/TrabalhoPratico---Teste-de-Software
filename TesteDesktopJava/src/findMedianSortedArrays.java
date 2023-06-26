@@ -2,6 +2,10 @@ package TesteDesktopJava.src;
 
 public class findMedianSortedArrays {
     public double findMedian(int[] nums1, int[] nums2) {
+
+        if(nums1.length <= 0 || nums2.length <= 0)
+            throw new IllegalArgumentException("O tamanho do array não pode ser menor ou igual a 0");
+            
         int sizeof = nums1.length + nums2.length;
         double result = 0;
         

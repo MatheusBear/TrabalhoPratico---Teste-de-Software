@@ -8,6 +8,10 @@ public class BubbleSort {
     */
     public int[] Sort(int[] array){
 
+        if(array.length == 0 || array.length < 0){
+            System.out.println("Array is empty");
+            return array;
+        }
         //Will move through the array, 1-by-1
         for(int i = 0; i < array.length - 1; i++){
             for(int j = 0; j < array.length - i - 1; j++){

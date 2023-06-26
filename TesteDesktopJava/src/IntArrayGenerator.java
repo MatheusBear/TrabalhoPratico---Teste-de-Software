@@ -4,6 +4,10 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class IntArrayGenerator {
     public int[] GenArray(int size){
+
+        if(size <= 0)
+            throw new IllegalArgumentException("O tamanho do array não pode ser menor ou igual a 0");
+
         int[] array = new int[size];  
 
         GenArrayWithNumbers(array);

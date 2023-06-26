@@ -7,6 +7,10 @@ public class InsertionSort {
     * @return  Sorted Array
     */
     public int[] Sort(int[] array){
+        if(array.length == 0 || array.length < 0){
+            System.out.println("Array is empty");
+            return array;
+        }
 
         for(int i = 1; i < array.length; i++){
             int key = array[i];
