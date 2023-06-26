@@ -87,44 +87,10 @@ Como o app não tem uma interface, ele não utiliza uma framework/biblioteca com
 
 # Estratégia de Testes
 
-## Escopo de Testes
-
-O plano de testes abrange todas as funcionalidades descritas nas tabelas acima. <br />
-
-Os testes foram executados da forma descrita abaixo: <br />
-
-Testes Unitários: O código tem uma cobertura de 100% das classes e métodos, e uma cobertura de 97% nas linhas 
-
-## Ambiente e Ferramentas
-
-Os testes foram feitas em duas EDIs.
-
-As seguintes ferramentas foram utilizadas no teste:
-
-| **Ferramentas** | **Descrição** |
-| --- | --- |
-| **Visual Studio Code** | EDI utilizada para testes unitários |
-| **IntelliJ** | Utilizada para visualizar a cobertura dos testes |
-| **Windows Screen Recorder** | Utilizado para gravar a apresentação |
-
 ---
 
 # Classificação de Bugs
 
-Os Bugs serão classificados com as seguintes severidades:
-
-| **ID** | **Nível de Severidade** | **Descrição** |
-| --- | --- | --- |
-| 1 | Grave | * Bug que faça o app cair(Crash / CTD) <br /> * Métodos não consegue ser chamado <br /> * Código não roda |
-| 2 | Moderada | * Resposta um pouco errada, por exemplo: Correto: 0.001 Reposta: 0.0011  |
-| 3 | Leve | * Erros ortográfico |
-
-
 ---
 
 # Definição de Pronto
-
-Será considerada pronta as funcionalidades que passarem pelas verificações e
-testes descritas nestes TestPlan e não apresentarem bugs com a severidade acima
-de Leve.
-
