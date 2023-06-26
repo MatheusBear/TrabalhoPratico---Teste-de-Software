@@ -13,15 +13,13 @@ Como o app não tem uma interface, ele não utiliza uma framework/biblioteca com
 # Funcionalidades
 | **Funcionalidades** | BubbleSort |
 | --- | --- |
-| **Comportamento Esperado** | Ao desejar fazer um BubbleSort, o usuário digita o array(vetor) que deseja ordenar. <br />
-Após isso, o App ordenará o array(vetor) utilizando o método Bubblesort |
-| **Verificações** | * Tamanho do array(vetor) é igual ou maior que 1 
-                     * Array(vetor) seja composto de números inteiros |
+| **Comportamento Esperado** | Ao desejar fazer um BubbleSort, o usuário digita o array(vetor) que deseja ordenar. <br /> Após isso, o App ordenará o array(vetor) utilizando o método Bubblesort |
+| **Verificações** | * Tamanho do array(vetor) é igual ou maior que 1 <br /> * Array(vetor) seja composto de números inteiros |
 | **Critérios de Aceite** | * Array(vetor) retornado esteja ordenado de maior para menor  |
 
-| **Funcionalidades** |  |
+| **Funcionalidades** | Caesars Cipher |
 | --- | --- |
-| **Comportamento Esperado** |  |
+| **Comportamento Esperado** | É digitado uma frase que deseja ser criptografada, e um número inteiro <br /> O código respondará com uma frase criptografada |
 | **Verificações** |  |
 | **Critérios de Aceite** |  |
 
