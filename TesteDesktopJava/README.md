@@ -103,6 +103,7 @@ As seguintes ferramentas foram utilizadas no teste:
 
 | **Ferramentas** | **Descrição** |
 | --- | --- |
+| **Junit** | Para criar os testes em ambas as EDIs |
 | **Visual Studio Code** | EDI utilizada para testes unitários |
 | **IntelliJ** | Utilizada para visualizar a cobertura dos testes |
 | **Windows Screen Recorder** | Utilizado para gravar a apresentação |
